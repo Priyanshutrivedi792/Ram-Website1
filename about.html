@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>ABOUT-PRIYANSHU</title>
+    <style>
+      body {
+        background-color: #211f1f;
+      }
+      .h-content {
+        color: rgb(199, 246, 246);
+        max-width: 50%;
+      }
+      .h-content h1 {
+        font-size: 2rem;
+      }
+      .h-content h3 {
+        font-size: 1.5rem;
+        margin: 20px 0;
+      }
+      .h-content p {
+        font-size: 1rem;
+        margin-top: 20px;
+      }
+      .perimage {
+        position: relative;
+        height: 50vh;
+        width: 35vw;
+        left: 25%;
+        object-fit: contain;
+        box-sizing: border-box;
+        border-image: fill;
+        border-radius: 10px;
+        margin-left: 20%;
+        background: linear-gradient(to right, #676767, #1f3125);
+        opacity: 1;
+        cursor: grabbing;
+      }
+
+      .perimage:hover {
+        border-radius: 20%;
+        background-color: grey;
+        transform: perspective(500px) rotateX(10deg);
+      }
+      .contacts {
+        position: absolute;
+        bottom: 2.8rem;
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .contacts a {
+        position: relative;
+        display: inline-flex;
+        width: 40px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid #2f83f9;
+        border-radius: 20%;
+        font-size: 20px;
+        color: #2f83f9;
+        justify-content: center;
+        text-decoration: none;
+        overflow: hidden;
+      }
+      .contacts a:hover {
+        color: #212a24;
+      }
+      .contacts a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #2f83f9;
+        z-index: -1;
+        transition: 0.5s;
+      }
+      @media screen and (max-width:500px) {
+        .perimage {
+          position: absolute;
+          height: 35vh;
+          width: 40vw;
+          right: 50%;
+          object-fit: contain;
+          box-sizing: border-box;
+          border-radius: 10px;
+          margin-left: 10%;
+          background: linear-gradient(to right, #676767, #1f3125);
+          opacity: 1;
+          cursor: grabbing;
+        }
+        .h-content {
+          color: rgb(112, 242, 242);
+          max-width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h-content">
+      <h1>Hi, I'm Priyanshu Trivedi</h1>
+      <h3>Frontend Developer</h3>
+      <p>
+        As a frontend developer, I am committed to staying on the cutting edge
+        of my field and continually expanding my knowledge base. Currently in
+        the process of completing my studies, I am enthusiastic about learning
+        new technologies and best practices to create visually appealing,
+        user-friendly interfaces. Keeping up with the latest trends and
+        developments in frontend development is crucial for me to deliver
+        high-quality work.
+      </p>
+    </div>
+    <img src="./img/priyanshuimg.jpg" alt="" class="perimage" id="img" />
+    <div class="contacts">
+      <a href="https://www.facebook.com/priyanshu.trivedi.5099?mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/p/Cv7dB_aPjxNFu3913cPZ-oKDXZsZnwelaln_Tw0/?igsh=N2ZqeTYxdTgxc205"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="https://www.linkedin.com/in/priyanshu-trivedi-b99900262/"
+        ><i class="bx bxl-linkedin-square"></i
+      ></a>
+    </div>
+  </body>
+</html>

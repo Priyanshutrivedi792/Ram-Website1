@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: radial-gradient(#faa135bc, #f71f9de0);
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 2rem;
+    border: 2px dotted green;
+    color: #036bb1;
+    text-shadow: 1px 2px black;
+    animation: clink 4s 1s infinite;
+}
+
+@keyframes clink {
+
+    0%,
+    50% {
+        color: #ff0001;
+        font-size: 1.7rem;
+    }
+
+    55%,
+    60% {
+        color: #49021d;
+        font-size: 1.7rem;
+    }
+}
+button{
+    background-color: #534646;
+    height: 2rem;
+    width: 3.2rem;
+    border-radius: 10px;
+    margin: 2% 5%;
+    box-shadow: 3px #036bb1;
+    
+}
+@media screen and (max-width:600) {
+    h2 {
+        padding-top: 2%;
+        font-size: 24px;
+        word-wrap: break-word;
+        border: 2px dotted green;
+        color: #036bb1;
+        text-shadow: 1px 2px black;
+        animation: clink 6s 3s infinite;
+    }
+    
+    @keyframes clink {
+    
+        0%,
+        50% {
+            color: #ff0001;
+            
+        }
+    
+        55%,
+        60% {
+            color: #49021d;
+        }
+    }
+
+    
+}
